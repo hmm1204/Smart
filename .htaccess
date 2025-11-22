@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# 重定向根路径到Smart.php
+RewriteRule ^$ Smart.php [L]
+
+# 处理M3U8代理请求
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ Smart.php [QSA,L]

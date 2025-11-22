@@ -1,0 +1,14 @@
+{
+  "name": "Smart",
+  "description": "M3U8 Proxy with failover functionality",
+  "type": "project",
+  "require": {
+    "php": "^8.0",
+    "ext-curl": "*"
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "chmod -R 755 ."
+    ]
+  }
+}
